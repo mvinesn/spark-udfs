@@ -1,8 +1,11 @@
 #!/bin/bash
 
-python3 -m venv ./pyenv
+PROJECT_NAME=$(basename $(dirname $PWD))
+source `which virtualenvwrapper.sh`
+mkvirtualenv $PROJECT_NAME
 
-source ./pyenv/bin/activate
+set -euo pipefail
 
+ln -s ~/.virtualenvs/$PROJECT_NAME pyenv
 pip install wheel
 pip install -r requirements.txt

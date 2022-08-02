@@ -4,5 +4,5 @@ spark-warehouse/
 scala/**/target
 downloads/
 data/
-pyenv/
+pyenv
 __pycache__/

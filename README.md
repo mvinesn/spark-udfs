@@ -9,15 +9,16 @@ In this repo we show how UDFs written in Python and Scala can be used in a PySpa
 
 ## Requirements
 
-To run this project the following are needed:
-- Python 3.8 and `venv`
-- Java 8 SDK
+- [Python 3.8](https://www.python.org/downloads/release/python-380/) and the following packages:
+   - [`virtualenv`](https://virtualenv.pypa.io/en/latest/)
+   - [`virtualenvwrapper`](https://pypi.org/project/virtualenvwrapper/)
+- [Java 8 SDK](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)
 
 ## Basic setup
 
 At the root the project there is the main setup script `setup.sh`. This script will:
 - Setup the Python project under the `python` directory.
-   - A new virtual environment will be created under `pyenv` where all Python dependencies will be installed.
+   - A new virtual environment will be created under `~/.virtualenvs` where all Python dependencies will be installed.
 - Build the Scala project artifacts under the `scala` directory.
 
 ### Manually building Scala UDF
@@ -33,7 +34,7 @@ This will create the Scala artifact in `scala/target/scala-2.12/spark-udf-assemb
 ## Running the PySpark example in the interactive console
 
 1. Open a command line window at the project root and go to the `python` directory using `cd python`.
-2. Activate the virtual environment using `source ./pyenv/bin/activate`
+2. Activate the virtual environment using `workon spark-udfs`
 3. Open an interactive Python console by typing `ipython`
 4. Load files into the interactive console with the `%load` command. For example:
    ```python
