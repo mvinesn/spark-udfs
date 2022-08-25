@@ -1,9 +1,5 @@
-# This Pylint rcfile contains a best-effort configuration to uphold the
-# best-practices and style described in the Google Python style guide:
-#   https://google.github.io/styleguide/pyguide.html
-#
-# Its canonical open-source location is:
-#   https://google.github.io/styleguide/pylintrc
+# This Pylint rcfile is a modified version of the configuration defined in the
+# Google Python style guide: https://google.github.io/styleguide/pyguide.html
 
 [MASTER]
 
@@ -153,7 +149,7 @@ disable=abstract-method,
 # Set the output format. Available formats are text, parseable, colorized, msvs
 # (visual studio) and html. You can also give a reporter class, eg
 # mypackage.mymodule.MyReporterClass.
-output-format=text
+output-format=colorized
 
 # Tells whether to display a full report or only the messages
 reports=no
@@ -259,7 +255,7 @@ generated-members=
 [FORMAT]
 
 # Maximum number of characters on a single line.
-max-line-length=80
+max-line-length=120
 
 # TODO(https://github.com/PyCQA/pylint/issues/3352): Direct pylint to exempt
 # lines made too long by directives to pytype.
@@ -276,11 +272,9 @@ single-line-if-stmt=yes
 # Maximum number of lines in a module
 max-module-lines=99999
 
-# String used as indentation unit.  The internal Google style guide mandates 2
-# spaces.  Google's externaly-published style guide says 4, consistent with
-# PEP 8.  Here, we use 2 spaces, for conformity with many open-sourced Google
-# projects (like TensorFlow).
-indent-string='  '
+# String used as indentation unit.  Google's externaly-published style guide says
+# 4, consistent with PEP 8.
+indent-string='    '
 
 # Number of spaces of indent required inside a hanging  or continued line.
 indent-after-paren=4
