@@ -1,9 +1,9 @@
+"""
+Python UDF to compute text stats.
+"""
+
 import re
 from typing import Tuple
-
-from pyspark.sql.types import StructType, StructField, LongType
-
-from pyspark.sql import functions as F
 
 
 def get_text_stats(text: str) -> Tuple[str]:

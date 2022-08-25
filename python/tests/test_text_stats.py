@@ -1,4 +1,6 @@
-import pytest
+"""
+Unit tests for the text stats Python UDF.
+"""
 
 from text_stats import text_stats
 

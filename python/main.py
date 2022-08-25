@@ -1,3 +1,7 @@
+"""
+Example PySpark program that shows how to use Python and Scala UDF with DataFrames.
+"""
+
 import os
 
 from pyspark.sql import SparkSession
