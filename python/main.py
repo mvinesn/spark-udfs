@@ -12,7 +12,6 @@ from text_stats import text_stats
 
 
 PROJECT_ROOT_PATH = os.path.realpath('..')
-DATASET_PATH = os.path.join(PROJECT_ROOT_PATH, 'data', 'sample_data.json')
 SCALA_ARTIFACTS_PATH = os.path.join(PROJECT_ROOT_PATH, 'scala', 'target', 'scala-2.12', 'spark-udf-assembly-0.1.0.jar')
 
 spark = SparkSession.builder \
