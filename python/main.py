@@ -1,8 +1,4 @@
 import os
-from datetime import datetime
-from typing import Tuple, List
-
-import pyspark
 
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
